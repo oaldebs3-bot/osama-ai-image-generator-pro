@@ -1,10 +1,6 @@
 
 import { GoogleGenAI, Modality } from "@google/genai";
-import type { AspectRatio } from '../types';
-
-if (!process.env.API_KEY) {
-  throw new Error("API_KEY environment variable is not set");
-}
+import type { AspectRatio } from '../types.ts';
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 

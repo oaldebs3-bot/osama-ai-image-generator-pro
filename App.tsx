@@ -1,9 +1,9 @@
 
 import React, { useState, useCallback, useRef } from 'react';
-import { generateImage, editImage } from './services/geminiService';
-import { fileToBase64 } from './utils/fileUtils';
-import { SparklesIcon, PhotoIcon, ArrowDownTrayIcon, PencilSquareIcon, XCircleIcon, UploadIcon } from './components/icons';
-import type { AspectRatio } from './types';
+import { generateImage, editImage } from './services/geminiService.ts';
+import { fileToBase64 } from './utils/fileUtils.ts';
+import { SparklesIcon, PhotoIcon, ArrowDownTrayIcon, PencilSquareIcon, XCircleIcon, UploadIcon } from './components/icons.tsx';
+import type { AspectRatio } from './types.ts';
 
 type Mode = 'generate' | 'edit';
 
